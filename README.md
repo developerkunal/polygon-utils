@@ -3,8 +3,6 @@
 **Polygon Utils** is a web application that allows you to fetch bulk balances of users for ERC20 tokens and Matic (Polygon) balances. You
 can also export the balance data as a CSV file.
 
-![Screenshot](screenshot.png)
-
 ## Features
 
 - Fetch token balances for multiple addresses.
