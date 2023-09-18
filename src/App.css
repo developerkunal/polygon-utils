@@ -1,38 +1,93 @@
+/* App Container */
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heading */
+h1 {
+  color: #333;
+  font-size: 36px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Token Address Input */
+input[type='text'] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #f4f4f4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Addresses Input */
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #f4f4f4;
+  resize: none;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table Header */
+table th {
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+  border: none;
+}
+
+/* Table Rows */
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Table Cell - Address */
+table td:nth-child(1) {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px;
+}
+
+/* Table Cell - Balance */
+table td:nth-child(2) {
+  font-family: Courier, monospace;
+  font-size: 18px;
+  padding: 12px;
 }
